@@ -1,18 +1,14 @@
 
-    import java.util.ArrayList;
+    import java.sql.SQLIntegrityConstraintViolationException;
+    import java.util.HashMap;
  public class Main {
-
-
         public static void main(String[] args) {
-            ArrayList<Integer> numbers = new ArrayList<Integer>();
-            numbers.add(1);
-            numbers.add(2);
-            numbers.add(3);
-            numbers.add(4);
-            numbers.add(5);
-            numbers.remove(Integer.valueOf(5));
-            numbers.set(2, Integer.valueOf(55));
-            System.out.println(numbers.toString());
+            HashMap<String, Integer> examScores = new HashMap<String,Integer>();
+            examScores.put("java",80);
+            examScores.put("oprating system",78);
+            examScores.put("statics and probablity",75);
+            examScores.put("computer arch",85);
+            System.out.println(examScores.toString());
 
         }
 
